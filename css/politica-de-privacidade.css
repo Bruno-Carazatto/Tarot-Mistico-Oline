@@ -1,0 +1,94 @@
+/* ===== Política de Privacidade (escopo) ===== */
+body.policy .about { padding-top: 120px; }
+body.policy .contact { padding-top: 40px; }
+
+body.policy .contact-form {
+  /* mantém seu card padrão, só reforça tipografia da política */
+  line-height: 1.7;
+}
+
+/* Título interno do card */
+body.policy #titulo-politica {
+  margin-bottom: 8px;
+  color: var(--roxo);
+}
+
+/* Blocos tipo FAQ da política */
+body.policy .faq-list { gap: 16px; }
+
+body.policy .faq-item {
+  background: var(--branco);
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: var(--sombra);
+  border: 1px solid var(--cinza-200);
+}
+
+body.policy .faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-weight: 800;
+  color: var(--roxo);
+}
+
+/* Ícone setinha gira ao abrir */
+body.policy .faq-item[open] summary i { rotate: 180deg; }
+
+/* Texto dentro dos blocos */
+body.policy .faq-item p {
+  margin-top: 12px;
+  color: var(--cinza-700);
+}
+
+/* ===== Listas “bonitas” dentro dos blocos ===== */
+body.policy .faq-item ul {
+  margin-top: 12px;
+  padding-left: 0;        /* zera recuo padrão */
+  list-style: none;       /* vamos usar bullets customizados */
+  display: grid;
+  gap: 8px;
+}
+
+/* Cada item ganha bullet estilizado */
+body.policy .faq-item ul li {
+  position: relative;
+  padding-left: 28px;     /* espaço para o bullet */
+  color: var(--cinza-700);
+}
+
+/* Bullet com o roxo do tema */
+body.policy .faq-item ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--rosa-claro), var(--roxo));
+  box-shadow: 0 0 0 3px rgba(153, 51, 153, .08);
+}
+
+/* Frases-chave em negrito ficam mais legíveis */
+body.policy .faq-item ul li strong {
+  color: var(--cinza-700);
+  font-weight: 800;
+}
+
+/* Rodapé da política (linha 'Última atualização') */
+body.policy .contact-form .policy-meta {
+  text-align: right;
+  color: #777;
+  margin-top: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 576px){
+  body.policy .faq-item { padding: 16px; }
+  body.policy .faq-item ul li { padding-left: 24px; }
+  body.policy .faq-item ul li::before { width: 8px; height: 8px; top: 0.65em; }
+}

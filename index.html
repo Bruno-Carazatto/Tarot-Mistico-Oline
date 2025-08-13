@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" sizes="32x32" href="imagens/icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="imagens/icon.png">
+  <meta name="msapplication-TileImage" content="imagens/icon.png">
+  <title>Tarot Místico - Consultas Online</title>
+  <meta name="description" content="Tarot online com consultas personalizadas. Amor, carreira e espiritualidade com orientação clara e responsável." />
+  <meta property="og:title" content="Tarot Místico - Consultas Online" />
+  <meta property="og:description" content="Consultas de Tarot online com especialistas. Agende agora e receba orientações precisas." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#993399" />
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Mantenho o mesmo padrão de pastas -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="site-header" aria-label="Topo do site">
+    <a href="#home" class="logo" aria-label="Página inicial"><i class="fas fa-moon"></i> Tarot Místico</a>
+    <button class="menu-mobile" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menu">
+      <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+    <nav id="primaryNav" class="nav" aria-label="Navegação principal">
+      <a href="#home" class="nav-link">Início</a>
+      <a href="#about" class="nav-link">Sobre</a>
+      <a href="#services" class="nav-link">Serviços</a>
+      <a href="#plans" class="nav-link">Planos</a>
+      <a href="#testimonials" class="nav-link">Depoimentos</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#contato" class="btn-menu">Tirar Minhas Cartas</a>
+    </nav>
+    <div class="backdrop" id="backdrop" aria-hidden="true"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home" aria-label="Seção principal">
+    <div class="hero-content">
+      <h1>Descubra seu destino com o Tarot Online</h1>
+      <p>Consultas precisas e orientações espirituais para ajudar você a tomar as melhores decisões em sua vida amorosa, profissional e pessoal.</p>
+      <a href="#contato" class="btn-hero">Consultar Agora</a>
+    </div>
+    <img
+      src="https://s2-gshow.glbimg.com/neTPHAlXaFQN993QUxdo1inXpuE=/0x0:5269x3513/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2022/H/W/QpsjqdS9WWZPDHz8rp4w/tarot.jpeg"
+      alt="Baralho de Tarot com atmosfera mística"
+      class="hero-image"
+      loading="lazy">
+  </section>
+
+  <!-- Sobre -->
+  <section class="about" id="about" aria-label="Sobre">
+    <h2 class="section-title">Sobre Nossas Consultas</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <h3>Consultas de Tarot Personalizadas</h3>
+        <p>Nossas consultas de tarot são realizadas por especialistas com anos de experiência, oferecendo orientações claras e precisas para todas as áreas da sua vida.</p>
+        <p>Utilizamos métodos tradicionais combinados com intuição espiritual para fornecer as respostas que você precisa para tomar decisões importantes.</p>
+        <p>Cada consulta é única e adaptada às suas necessidades específicas, garantindo uma experiência verdadeiramente personalizada.</p>
+      </div>
+      <div class="about-image" aria-hidden="true">
+        <div class="tarot-card card-1">Amor</div>
+        <div class="tarot-card card-2">Carreira</div>
+        <div class="tarot-card card-3">Espiritual</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="services" id="services" aria-label="Serviços">
+    <h2 class="section-title">Nossos Serviços</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-heart" aria-hidden="true"></i></div>
+        <h3>Consulta de Amor</h3>
+        <p>Descubra o que as cartas revelam sobre seu relacionamento atual ou futuro. Obtenha insights sobre compatibilidade e conselhos para melhorar sua vida amorosa.</p>
+        <a href="#contato" class="service-btn" aria-label="Saiba mais sobre consulta de amor">Saiba Mais</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-briefcase" aria-hidden="true"></i></div>
+        <h3>Consulta Profissional</h3>
+        <p>Orientações para sua carreira e finanças. Descubra oportunidades ocultas e os melhores caminhos para o sucesso profissional.</p>
+        <a href="#contato" class="service-btn" aria-label="Saiba mais sobre consulta profissional">Saiba Mais</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-star" aria-hidden="true"></i></div>
+        <h3>Consulta Completa</h3>
+        <p>Uma análise abrangente de todas as áreas da sua vida. Amor, carreira, saúde e espiritualidade em uma única consulta detalhada.</p>
+        <a href="#contato" class="service-btn" aria-label="Saiba mais sobre consulta completa">Saiba Mais</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planos -->
+  <section class="plans" id="plans" aria-label="Planos de consulta">
+    <h2 class="section-title">Planos</h2>
+    <div class="plans-grid">
+      <article class="plan-card" aria-label="Plano Essencial">
+        <h3>Essencial</h3>
+        <p class="plan-price">R$ 49 <span>/ 20 min</span></p>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check"></i> 1 tema principal</li>
+          <li><i class="fa-solid fa-check"></i> Retorno por e-mail</li>
+          <li><i class="fa-solid fa-check"></i> Orientação objetiva</li>
+        </ul>
+        <a href="#contato" class="cta-plan">Escolher Essencial</a>
+      </article>
+
+      <article class="plan-card plan-card-featured" aria-label="Plano Premium">
+        <div class="badge">Mais escolhido</div>
+        <h3>Premium</h3>
+        <p class="plan-price">R$ 89 <span>/ 40 min</span></p>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check"></i> Até 3 temas</li>
+          <li><i class="fa-solid fa-check"></i> Resumo em PDF</li>
+          <li><i class="fa-solid fa-check"></i> Prioridade de agenda</li>
+        </ul>
+        <a href="#contato" class="cta-plan">Escolher Premium</a>
+      </article>
+
+      <article class="plan-card" aria-label="Plano Completo">
+        <h3>Completo</h3>
+        <p class="plan-price">R$ 129 <span>/ 60 min</span></p>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check"></i> Múltiplas áreas</li>
+          <li><i class="fa-solid fa-check"></i> PDF + áudio</li>
+          <li><i class="fa-solid fa-check"></i> 7 dias de acompanhamento</li>
+        </ul>
+        <a href="#contato" class="cta-plan">Escolher Completo</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="testimonials" id="testimonials" aria-label="Depoimentos de clientes">
+    <h2 class="section-title">O Que Dizem Nossos Clientes</h2>
+    <div class="testimonials-container">
+      <div class="testimonial-card">
+        <p class="testimonial-text">A consulta foi incrivelmente precisa e me ajudou a tomar uma decisão importante sobre meu relacionamento. Recomendo muito!</p>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Foto de Ana Silva" class="author-img" loading="lazy">
+          <div class="author-info">
+            <h4>Ana Silva</h4>
+            <p>Cliente desde 2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">Nunca tinha feito uma consulta de tarot antes e fiquei impressionado com a precisão das informações. Me ajudou muito profissionalmente.</p>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto de Carlos Oliveira" class="author-img" loading="lazy">
+          <div class="author-info">
+            <h4>Carlos Oliveira</h4>
+            <p>Cliente desde 2023</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">As orientações espirituais me trouxeram uma paz que eu não sentia há anos. Agendarei consultas regularmente!</p>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Foto de Mariana Costa" class="author-img" loading="lazy">
+          <div class="author-info">
+            <h4>Mariana Costa</h4>
+            <p>Cliente desde 2021</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-label="Perguntas frequentes">
+    <h2 class="section-title">Perguntas Frequentes</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary><span>Como funciona a consulta online?</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary>
+        <p>Após o agendamento, você recebe um link no e-mail/WhatsApp para a sessão no horário combinado. As leituras podem ser por chamada ou mensagem, conforme sua preferência.</p>
+      </details>
+      <details class="faq-item">
+        <summary><span>Posso escolher o tema da leitura?</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary>
+        <p>Sim! Você pode focar em amor, carreira, espiritualidade ou solicitar uma leitura geral. Quanto mais específico, melhor a orientação.</p>
+      </details>
+      <details class="faq-item">
+        <summary><span>Recebo algum material após a consulta?</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary>
+        <p>Nos planos Premium e Completo, você recebe um PDF com os principais pontos e, no Completo, também um áudio com orientações.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Pronto para Descobrir seu Destino?</h2>
+    <p>Agende agora sua consulta de tarot online e receba orientações precisas para transformar sua vida.</p>
+    <div class="cta-buttons">
+      <a href="#contato" class="cta-btn cta-btn-primary">Consultar Agora</a>
+      <a href="https://wa.me/5511987654321?text=Olá%20quero%20agendar%20uma%20consulta%20de%20Tarot" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn-secondary">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Fale no WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contact" id="contato" aria-label="Formulário de contato">
+    <h2 class="section-title">Agende sua Consulta</h2>
+    <form id="contactForm" class="contact-form" novalidate>
+      <div class="form-grid">
+        <div class="form-field">
+          <label for="nome">Nome completo*</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name" />
+        </div>
+        <div class="form-field">
+          <label for="email">E-mail*</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email" />
+        </div>
+        <div class="form-field">
+          <label for="whatsapp">WhatsApp*</label>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required inputmode="tel" />
+        </div>
+        <div class="form-field">
+          <label for="plano">Plano*</label>
+          <select id="plano" name="plano" required>
+            <option value="" selected disabled>Selecione um plano</option>
+            <option>Essencial (20 min)</option>
+            <option>Premium (40 min)</option>
+            <option>Completo (60 min)</option>
+          </select>
+        </div>
+        <div class="form-field form-full">
+          <label for="mensagem">Mensagem (opcional)</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Conte brevemente seu objetivo com a consulta" rows="4"></textarea>
+        </div>
+      </div>
+
+      <div class="consent">
+        <input type="checkbox" id="lgpd" required />
+        <label for="lgpd">Concordo com o tratamento dos meus dados conforme a <a href="politica-de-privacidade.html" class="link-inline">Política de Privacidade</a>.</label>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="cta-btn cta-btn-primary">Solicitar Agendamento</button>
+        <a id="btnWhats" class="cta-btn cta-btn-secondary" href="#" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Enviar pelo WhatsApp
+        </a>
+      </div>
+
+      <!-- Observação: preparado para backend futuro -->
+      <!-- Backend irá receber POST deste form (ver ids/campos). Validações já existem no JS. -->
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Sobre Nós</h3>
+        <p>Tarot Místico oferece consultas de tarot online precisas e personalizadas para ajudar você a encontrar o caminho certo em sua vida.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+          <a href="https://wa.me/5511987654321" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Links Rápidos</h3>
+        <ul class="footer-links">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#plans">Planos</a></li>
+          <li><a href="#testimonials">Depoimentos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="politica-de-privacidade.html" target="_blank" rel="noopener noreferrer">Política de Privacidade</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contato</h3>
+        <p><i class="fas fa-envelope"></i> contato@tarotmistico.com</p>
+        <p><i class="fas fa-phone"></i> (11) 98765-4321</p>
+        <p><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Tarot Místico. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
